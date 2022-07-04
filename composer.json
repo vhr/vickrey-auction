@@ -1,0 +1,25 @@
+{
+    "require": {
+        "ext-mbstring": "*",
+        "ext-pcov": "*",
+        "symfony/console": "^6.1",
+        "symfony/validator": "^6.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.1",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
