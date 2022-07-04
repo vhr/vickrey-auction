@@ -10,12 +10,14 @@ build the image locally
 ```
 git clone https://github.com/vhr/vickrey-auction.git
 cd vickrey-auction
+docker build -t vickrey-auction .
 docker run -it --rm --name vickrey-auction vickrey-auction
 ```
 
 Run
 ```
-docker run -it --rm --name vickrey-auction vickrey-auction
+docker pull vhr7/vickrey-auction:latest
+docker run -it --rm --name vickrey-auction vhr7/vickrey-auction:latest
 ```
 
 ## Run locally
@@ -35,6 +37,6 @@ composer test
 
 # References
 
-https://en.wikipedia.org/wiki/Vickrey_auction
-https://symfony.com/doc/current/components/console.html
-https://phpunit.de/
+- https://en.wikipedia.org/wiki/Vickrey_auction
+- https://symfony.com/doc/current/components/console.html
+- https://phpunit.de/
