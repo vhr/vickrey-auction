@@ -6,6 +6,7 @@
     </include>
     <report>
       <html outputDirectory="./coverage" lowUpperBound="50" highLowerBound="80"/>
+      <xml outputDirectory="./"/>
     </report>
   </coverage>
   <testsuites>

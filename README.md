@@ -29,7 +29,7 @@ composer install
 php ./application.php
 ```
 
-# Tests
+# Tests [![codecov](https://codecov.io/gh/vhr/vickrey-auction/branch/main/graph/badge.svg?token=6PB12ANA1W)](https://codecov.io/gh/vhr/vickrey-auction)
 
 ```bash
 composer test
