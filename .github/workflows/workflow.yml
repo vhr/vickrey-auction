@@ -1,5 +1,5 @@
 steps:
-- uses: actions/checkout@master
+- uses: actions/checkout@main
 - uses: codecov/codecov-action@v3
   with:
     flags: unittests # optional
