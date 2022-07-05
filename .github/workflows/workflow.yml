@@ -1,8 +1,25 @@
-steps:
-- uses: actions/checkout@main
-- uses: codecov/codecov-action@v3
-  with:
-    flags: unittests # optional
-    name: codecov-umbrella # optional
-    fail_ci_if_error: true # optional (default = false)
-    verbose: true # optional (default = false)
+name: Workflow for Codecov
+on: [push]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Install dependencies
+      uses: php-actions/composer@v6
+      with:
+        php_version: "8.1"
+        args: --ignore-platform-reqs
+
+    - name: Generate coverage report
+      run: XDEBUG_MODE=coverage composer test
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: true
+        verbose: true

@@ -20,6 +20,6 @@
         }
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit --coverage-clover coverage.xml"
     }
 }
