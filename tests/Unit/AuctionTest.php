@@ -103,4 +103,21 @@ final class AuctionTest extends TestCase
 
         $auction->winningPrice($auction->winner());
     }
+
+    public function testBuyerGetBids(): void
+    {
+        $auction = new Auction(
+            (new Session(1))
+                ->addBuyer(new Buyer('A'))
+        );
+
+        $auction
+            ->bid($auction->getBuyer('A'), 2)
+            ->bid($auction->getBuyer('A'), 3);
+
+        $this->assertEquals(
+            [2, 3],
+            $auction->getBuyer('A')->getBids(),
+        );
+    }
 }
