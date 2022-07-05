@@ -30,6 +30,7 @@ php ./application.php
 ```
 
 # Tests [![codecov](https://codecov.io/gh/vhr/vickrey-auction/branch/main/graph/badge.svg?token=6PB12ANA1W)](https://codecov.io/gh/vhr/vickrey-auction)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvhr%2Fvickrey-auction.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvhr%2Fvickrey-auction?ref=badge_shield)
 
 ```bash
 composer test
@@ -40,3 +41,6 @@ composer test
 - https://en.wikipedia.org/wiki/Vickrey_auction
 - https://symfony.com/doc/current/components/console.html
 - https://phpunit.de/
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvhr%2Fvickrey-auction.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvhr%2Fvickrey-auction?ref=badge_large)
