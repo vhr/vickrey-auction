@@ -14,7 +14,7 @@ docker build -t vickrey-auction .
 docker run -it --rm --name vickrey-auction vickrey-auction
 ```
 
-Run
+or run the pre-build image
 ```
 docker pull vhr7/vickrey-auction:latest
 docker run -it --rm --name vickrey-auction vhr7/vickrey-auction:latest
